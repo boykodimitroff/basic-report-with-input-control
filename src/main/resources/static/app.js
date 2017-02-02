@@ -9,8 +9,6 @@
 
     function BasicReportController($scope, InputControlsResource, ReportDataResource, ReportChartService) {
 
-        var vm = this;
-
         InputControlsResource.getData().success(function(response) {
             $scope.inputControlData = response;
         });
